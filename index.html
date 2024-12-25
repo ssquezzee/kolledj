@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <nav class="nav navbar navbar-expand-lg bg-body-white">
+            <div class="container ">
+                <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Навигация (главная, контакты и т.д.) -->
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center flex-grow-1">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./контакты.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./прием_в_школу.html">Поступление</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#otz">Отзывы</a>
+                        </li>
+
+                        <!-- Иконки -->
+
+                        <a class="nav-link active p-3" href=""><img src="./img/глаз.svg" alt=""></a>
+                        <a class="nav-link active" href="./found.html"><img src="./img/поиск.svg" alt=""></a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section-foto">
+        <div class="container">
+            <img src="./img/image 2.png" class="img-fluid" alt="...">
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="container-custom">
+            <div class="row">
+                <!-- Левый блок -->
+                <div class="col-md-3 sidebar">
+                    <button class="btn w-100 mb-2">Главная</button>
+                    <button class="btn w-100 mb-2" data-bs-toggle="collapse"
+                        data-bs-target="#educationMenu">Образование</button>
+                    <div id="educationMenu" class="collapse ps-3">
+                        <p class="text-light">Особенности организации образовательного процесса</p>
+                        <a href="./прием_в_школу.html">
+                            <p class="text-light">Прием в школу</p>
+                        </a>
+                        <p class="text-light">Государственная итоговая аттестация выпускников</p>
+                        <p class="text-light">Всероссийская олимпиада школьников</p>
+                        <p class="text-light">Всероссийская проверочная работа (ВПР)</p>
+                    </div>
+
+                    <a href="#news"><button class="btn w-100 mb-2" data-bs-toggle="collapse"
+                            data-bs-target="#news">Новости</button></a>
+
+                    <a href="./контакты.html"><button class="btn w-100 mb-2" data-bs-toggle="collapse"
+                            data-bs-target="#contact">Контакты</button></a>
+
+                    <a href="./priem.html"><button class="btn w-100 mb-2" data-bs-toggle="collapse"
+                            data-bs-target="#priem">Виртуальная приемная</button></a>
+
+                    <button class="btn w-100 mb-2" data-bs-toggle="collapse" data-bs-target="#info">Информация,
+                        размещенная в
+                        соответствии с требованиями действующего законодательства</button>
+                    <div id="info" class="collapse ps-3">
+                        <a href="./info.html">
+                            <p class="text-light">Информация, размещенная в соотвествии с п.3.3 ст.32 Федерального
+                                закона от 12.01.1996
+                                N7-ФЗ(ред. от
+                                02.0.2013) "О некоммерческих организациях"</p>
+                        </a>
+                        <p class="text-light">Информационная безопасность</p>
+                        <p class="text-light">Политика МБОУ СШ №4 в отношении обработки персональных данных</p>
+                        <p class="text-light">Противодействие коррупции</p>
+                        <p class="text-light">Антитеррористическая защищенность</p>
+                        <p class="text-light">Специальная оценка условий труда</p>
+                    </div>
+                    <a href="./psiholog.html"><button class="btn w-100 mb-2" data-bs-toggle="collapse"
+                            data-bs-target="#psih">Страница
+                            педагога-психолога</button></a>
+                </div>
+
+                <!-- Правый блок -->
+                <div class="col-md-9 content">
+                    <h1 class="text-center mb-5">Добро пожаловать на официальный сайт <br>
+                        Муниципального бюджетного общеобразовательного учреждения<br>
+                        «Средняя школа № 4»<br>
+                        г.Дзержинска Нижегородской области.</h1>
+                    <header class="d-flex justify-content-center">
+                        <div class="banner d-flex justify-content-between align-items-center mb-5">
+                            <a href="#" class="navbar-brand">
+                                <img src="./img/logo.svg" alt="Logo" class="logo">
+                            </a>
+                            <!-- Ссылка для открытия модального окна -->
+                            <a href="#" class="banner-text" data-bs-toggle="modal" data-bs-target="#applicationModal">
+                                оставьте заявку на поступление
+                            </a>
+                        </div>
+                    </header>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="applicationModal" tabindex="-1" aria-labelledby="applicationModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="applicationModalLabel">Форма заявки</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Форма заявки -->
+                                    <form id="applicationForm">
+                                        <div class="mb-3">
+                                            <label for="fullName" class="form-label">ФИО</label>
+                                            <input type="text" class="form-control" id="fullName"
+                                                placeholder="Введите ваше ФИО" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Почта</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Введите ваш email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Номер телефона</label>
+                                            <input type="tel" class="form-control" id="phone"
+                                                placeholder="Введите ваш номер телефона" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Сообщение</label>
+                                            <textarea class="form-control" id="message" rows="3"
+                                                placeholder="Опишите вашу заявку" required></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary"
+                                        form="applicationForm">ОТПРАВИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .banner {
+                            width: 728px;
+                            height: 90px;
+                            border: 3px solid #383489;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0 20px;
+                            background-color: #fff;
+                            border-radius: 7px;
+                            /* Закругленные края */
+                        }
+
+                        .logo {
+                            height: 100px;
+                            /* Размер логотипа */
+                        }
+
+                        .banner-text {
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: #383489;
+                            animation: colorChange 5s infinite alternate;
+                            /* Запускаем анимацию */
+                        }
+
+                        @keyframes colorChange {
+                            0% {
+                                color: #383489;
+                                /* Начальный цвет */
+                            }
+
+                            50% {
+                                color: red;
+                                /* Цвет в середине */
+                            }
+
+                            100% {
+                                color: #383489;
+                                /* Возвращаемся к начальному цвету */
+                            }
+                        }
+                    </style>
+                    <h2 class="text-center mb-3">Информация о приеме документов на зачисление в 1 класс в 2024-2025
+                        учебном году
+                    </h2>
+                    <p class="text-center">Уважаемые родители (законные представители) будущих первоклассников! </p>
+                    <p class="text-left">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-form">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="container-custom">
+                <div class="row mt-5 ">
+                    <!-- новости -->
+                    <div class="col-md-3 sidebar" id="news">
+                        <h5>Новости</h5>
+                        <p class="mt-3">19 ноября 2024 г.</p>
+                        <a href="#">Автономный пожарный извещатель</a>
+                        <p class="mt-3">16 ноября 2024 г.</p>
+                        <a href="#">III Всероссийский Налоговый диктант</a>
+                        <p class="mt-3">10 ноября 2024 г.</p>
+                        <a href="#">Подростки мечтают работать курьерами и продавцами</a>
+                        <p class="mt-3">10 ноября 2024 г.</p>
+                        <a href="#">Осторожно, пневмония!</a>
+                        <p class="mt-3">12 сентября 2024 г.</p>
+                        <a href="#">Диспансеризация</a>
+                        <p class="mt-3">11 сентября 2024 г.</p>
+                        <a href=" #">Памятка педагогам образовательных организаций по профилактике острой респираторной
+                            вирусной
+                            инфекции, в том числе новой коронавирусной инфекции (COVID-19)</a>
+                        <p class="mt-3">27 августа 2024 г.</p>
+                        <a href="#">Ежегодное обозрение субъектов РФ «Социальное развитие России»</a>
+                    </div>
+
+                    <!-- формочка -->
+                    <div class="col-md-9">
+                        <p> Администрация Муниципального бюджетного общеобразовательного учреждения "Средняя школа
+                            № 4" уведомляет Вас о досрочном завершении приема
+                            заявлений на обучение в первый класс детей, имеющих право внеочередного, первоочередного или
+                            преимущественного приема, а также проживающих на территории г. о .г
+                            Дзержинск, закрепленной за МБОУ СШ № 4, 27 апреля 2024 года. 
+                            Прием заявлений на обучение в первый класс детей (вторая волна), не проживающих на
+                            закрепленной
+                            территории,  будет осуществляться с 06 мая 2024г по
+                            5 сентября 2024. График приема заявлений: понедельник - пятница с 8.30 до 16.00 час.
+                            Приказ № 153-п от 16.04.2024 О завершении приема документов в 1 класс от граждан,
+                            проживающих на
+                            закрепленной за МБОУ СШ № 4 территории, а
+                            также граждан, имеющих преимущественное право приема</p>
+                        <hr class="border border-primary border-3 opacity-75">
+                        <ul class="mt-5">
+                            <li><a href="#" class="underline-btn">Постановление администрации города Дзержинска
+                                    Нижегородской области
+                                    от 06.03.2024 № 851 "О закреплении муниципальных образовательных организаций,
+                                    реализующих
+                                    образовательные программы дошкольного образования, основные общеобразовательные
+                                    программы начального
+                                    общего, основного общего и среднего общего образования, за конкретными территориями
+                                    городского округа
+                                    город Дзержинск" </a></li>
+                            <li><a href="#" class="underline-btn">Приложение к Постановлению.</a></li>
+                            <li><a href="#" class="underline-btn">Результаты независимой оценки качества оказания услуг
+                                    в сфере
+                                    образования на сайте <a href="bus.gov.ru">bus.gov.ru</a></a></li>
+                            <li><a href=" https://strategy.government-nnov.ru/" class="underline-btn">Стратегия развития
+                                    Нижегородской области</a></li>
+                            <li><a href="https://revizorro.onf.ru/ " class="underline-btn"> НАРОДНЫЙ РЕВИЗОРРО (Проект
+                                    по защите прав детей в школах и детских
+                                    садах)</a></li>
+                        </ul>
+
+                        <div class="ban2">
+                            <div class="banner-container d-flex justify-content-center align-items-center">
+                                <!-- Баннер -->
+                                <div class="banner2 d-flex justify-content-between align-items-center">
+                                    <a href="#" class="navbar-brand">
+                                        <img src="./img/logo.svg" alt="Logo" class="logo2">
+                                    </a>
+                                    <span class="banner-text2">
+                                        хотите узнать подробнее про поступление? <br> жмите узнать подробнее
+                                    </span>
+                                </div>
+
+                                <!-- Кнопка -->
+                                <a href="./прием_в_школу.html"><button class="btn-uznat" >Узнать подробнее</button></a>
+                            </div>
+                        </div>
+
+                        <style>
+                            .banner-container {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 10px;
+                            }
+
+                            .banner2 {
+                                width: 468px;
+                                height: 60px;
+                                border: 3px solid #383489;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 0 10px;
+                                background-color: #fff;
+                                border-radius: 7px;
+                                /* Закругленные края */
+                            }
+
+                            .logo2 {
+                                height: 60px;
+                                /* Размер логотипа */
+                            }
+
+                            .banner-text2 {
+                                font-size: 10px;
+                                font-weight: bold;
+                                color: #383489;
+                                transition: color 2s ease-in-out;
+                                /* Плавное изменение цвета */
+                            }
+
+                            /* Анимация изменения цвета */
+                            @keyframes colorChange {
+                                0% {
+                                    color: #383489;
+                                    /* Начальный цвет */
+                                }
+
+                                50% {
+                                    color: red;
+                                    /* Цвет в середине */
+                                }
+
+                                100% {
+                                    color: #383489;
+                                    /* Возвращаемся к начальному цвету */
+                                }
+                            }
+
+                            .banner-text2 {
+                                animation: colorChange 5s infinite alternate;
+                            }
+
+                            .btn-uznat {
+                                background-color: #383489;
+                                color: #fff;
+                                padding: 10px 20px;
+                                font-size: 14px;
+                                border-radius: 7px;
+                                cursor: pointer;
+                                margin-left: 110px;
+                                transition: .5s;
+                            }
+
+                            .btn-uznat:hover {
+                                background-color: #fff;
+                                color: #383489;
+                                border: 3px solid #383489;
+                                transition: .3s;
+                            }
+                        </style>
+
+                        <h2 class="text-center mb-4 mt-5">Если у Вас возникли вопросы, просим заполнить форму</h2>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <label for="name" class="form-label">Как вас зовут</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Введите имя">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="phone" class="form-label">Ваш контактный телефон</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Введите телефон">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="email" class="form-label">Ваш электронный адрес</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Введите email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Текст Вашего обращения</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Введите текст"></textarea>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <div class="col-md-3">
+                                    <label for="captcha" class="form-label">Проверочный код</label>
+                                    <img src="./img/image 4.png" alt="Проверочный код" class="d-block w-60 mb-2">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" id="captcha" placeholder="Введите код">
+                                </div>
+                            </div>
+
+                            <div class="form-text mb-3">
+                                Отправляя эту форму, вы подтверждаете, что прочитали и согласны с политикой в отношении
+                                обработки
+                                персональных данных.
+                                <a href="#" target="_blank">Ссылка на описание политики обработки персональных
+                                    данных</a>.
+                            </div>
+
+                            <button type="submit" class="btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="reviews container mt-5" id="otz">
+        <h2 class="text-center mb-4">Отзывы</h2>
+        <div class="row">
+            <!-- Отзыв 1 -->
+            <div class="col-md-4 text-center mb-4">
+                <div class="profile-pic mb-3">
+                    <img src="./img/image 14.png" alt="Екатерина С." class="profile-image img-fluid rounded-circle">
+                </div>
+                <div class="review-text">
+                    <p class="name">Екатерина С.</p>
+                    <p>Сильные преподаватели. Спасибо большое за знания, которые мне Вы дали. Очень сильная и хорошая
+                        база. Особая благодарность Сучковой Ольге Владимировне, Копейкиной Инне Валерьевне, Алефтине
+                        Васильевне, Людмиле Константиновне, Галине Сергеевне, всем вам низкий поклон до земли, СПАСИБО!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Отзыв 2 -->
+            <div class="col-md-4 text-center mb-4">
+                <div class="profile-pic mb-3">
+                    <img src="./img/image 15.png" alt="Светлана" class="profile-image img-fluid rounded-circle">
+                </div>
+                <div class="review-text">
+                    <p class="name">Светлана</p>
+                    <p>В этой школе учился мой сын 5 лет, ему очень нравилось и учительница Лизунова О - профессионал
+                        своей профессии, ответственная, добра, к каждому найдет подход, УЧИТЕЛЬ ОТ БОГА !!💐 СПАСИБО
+                        БОЛЬШОЕ ЕЙ !!!!!</p>
+                </div>
+            </div>
+
+            <!-- Отзыв 3 -->
+            <div class="col-md-4 text-center mb-4">
+                <div class="profile-pic mb-3">
+                    <img src="./img/image 16.png" alt="Аня Кузьмина" class="profile-image img-fluid rounded-circle">
+                </div>
+                <div class="review-text">
+                    <p class="name">Аня Кузьмина</p>
+                    <p>Перевели детей из школы 34. Существенное отличие. Рекомендую эту школу. Директор всегда готова к
+                        контакту. В начальной школе несколько программ на выбор. Далее сильная подготовка для
+                        поступления в вуз.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        .profile-image {
+            width: 96px;
+            height: 86px;
+        }
+
+        .review-text p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+
+
+    <div class="section-foto">
+        <div class="container">
+            <img src="./img/image 2.png" class="img-fluid" alt="...">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-3 mb-3">
+                    <p>Сайты министерств, ведомств и организаций</p>
+                    <a href="https://edu.gov.ru/">Министерство просвещения Российской Федерации</a><br>
+                    <a href="https://gu.nnov.ru/">Госуслуги (Нижегородская область)</a><br>
+                    <a href="https://minobr.nobl.ru/">Министерство образования и науки Нижегородской области</a><br>
+                    <a href="https://адмдзержинск.рф/">Администрация города Дзержинска</a><br>
+                    <a href="http://www.soido.ru/">Департамент образования администрации города Дзержинска Нижегородской
+                        области</a><br>
+                </div>
+
+                <div class="col-md-6 mt-3 mb-3">
+                    <p>Федеральные образовательные порталы</p>
+                    <a href="https://edu.ru/">Федеральный портал Российское образование</a><br>
+                    <a href="https://web.archive.org/web/20191122092928/http://window.edu.ru/">Единое окно доступа к
+                        информационным ресурсам</a><br>
+                    <a href="https://web.archive.org/web/20191121151247/http://fcior.edu.ru/">Федеральный центр
+                        информационно-образовательных ресурсов</a><br>
+                    <p class="mt-3"> МБОУ СШ № 4 города Дзержинска Нижегородской области<br>
+                        © Конструктор сайтов<a href="https://nubex.ru/?utm_source=copyright">Nubex.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
